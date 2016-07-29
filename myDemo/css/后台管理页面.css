@@ -1,0 +1,28 @@
+.clearfix:before{
+    content:'';display:table;clear:both;
+}
+.clearfix:after{
+    content:'';display:table;clear:both;
+}
+.clearfix{
+    *zoom:1;
+}
+body{
+	width: 1280px;
+	min-height: 1266px;
+	margin: 0 auto;
+	font-family: "Microsoft YaHei";
+}
+header{
+	position: relative;
+	height: 56px;
+	background-color: #2189bf;
+}
+.logo{
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 10px;
+	width: 36px;
+	height: 36px;
+	
+}

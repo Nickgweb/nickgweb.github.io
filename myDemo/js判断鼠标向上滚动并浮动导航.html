@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js判断鼠标向上滚动并浮动导航</title>
+	<style type="text/css">
+		body,div,p,a,li{margin:0; padding:0;}
+		body{
+			height: 1000px;
+		}
+		ul,ol{list-style:none;}
+		a{color:#333; text-decoration:none;}
+		.nav{
+			width: 980px;
+			margin: 0 auto;
+		}
+		.nav li{
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			margin: 0 10px;
+		}
+		.nav li a{
+			display:block; 
+			padding:5px 10px;
+		}
+		.fixed-nav{
+			position: fixed;
+			width:100%;
+			top:-40px; 
+			-webkit-transition: top .5s;
+		    -moz-transition: top .5s;
+		    -o-transition: top .5s;
+		    transition: top .5s;
+		    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+		    -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+		    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+		}
+		.fixed-nav-appear{top:0;}
+	</style>
+</head>
+<body>
+	<div id="Jnav">
+		<ul class="nav">
+			<li><a href="#">WEB前端开发</a></li>
+			<li><a href="#">前端开发</a></li>
+			<li><a href="#">产品介绍</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./scripts/js判断鼠标向上滚动并浮动导航.js"></script>
+</body>
+</html>

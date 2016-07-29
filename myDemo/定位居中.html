@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位居中</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			position: relative; 
+			width: 100%;
+			height: 100%;
+			background-color: #f06d06;
+		}
+		.inline-container{
+			background-color: white;
+			margin: 20px 0;
+			padding: 10px;
+			text-align: center;
+		}
+		.block{
+			background-color: black;
+			color: #fff;
+			padding: 15px;
+			max-width: 125px;
+			margin: 5px;
+		}
+		.inline-container .block{
+			display: inline-block;
+			text-align: left;
+		}
+		.flex-container{
+			background-color: white;
+			margin: 20px 0;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+		}
+
+		table{
+			background-color: #fff;
+			width: 240px;
+			border-collapse: separate;
+			margin: 20px;
+			height: 250px;
+		}
+		table td{
+			background-color: #000;
+			color: #fff;
+			padding: 20px;
+			border: 10px solid #fff;
+		}
+		.centerTable{
+			display: table;
+			height: 250px;
+			background-color: #fff;
+			width: 240px;
+			margin: 20px;
+		}
+		.centerTable p{
+			display: table-cell;
+			margin: 0;
+			background-color: #000;
+			color: #fff;
+			padding: 20px;
+			border: 10px solid #fff;
+			vertical-align: middle;
+		}
+
+		main{
+			position: relative;
+			background-color: #fff;
+			height: 300px;
+			width: 200px;
+			/*padding: 20px;*/
+			margin: 20px;
+		}
+		main div{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: #000;
+			color: #fff;
+			padding: 20px;
+		}
+
+		.allCenter{
+			position: relative;
+			background-color: #fff;
+			padding: 20px;
+			margin: 20px;
+			height: 400px;
+		}
+		.allCenter div{
+			padding: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #000;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="inline-container">
+		<div class="block">
+			水平居中
+		</div>
+		<div class="block">
+			I'm an element that is block-like with my siblings and we're centered in a row.
+		</div>
+	</div>
+	<div class="flex-container">
+		<div class="block">
+			水平居中
+		</div>
+		<div class="block">
+			I'm an element that is block-like with my siblings and we're centered in a row.
+		</div>
+	</div>
+	<table>
+		<tr>
+			<td>垂直居中<br>
+			I'm vertically centered multiple lines of text in a real table cell.</td>
+		</tr>
+	</table>
+	<div class="centerTable">
+		<p>I'm vertically centered multiple lines of text in a CSS-created table layout.</p>
+	</div>
+	<main>
+		<div>
+			垂直居中<br>
+			I'm a block-level element with an unknown height, centered vertically within my parent.
+		</div>
+	</main>
+
+	<div class="allCenter">
+		<div>
+			垂直水平居中<br>
+			I'm a block-level element with an unknown height, centered vertically within my parent.
+		</div>
+	</div>
+</body>
+</html>
