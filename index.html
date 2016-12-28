@@ -1,72 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" />
-	<title>作品展示</title>
-	<link rel="stylesheet" type="text/css" href="./myDemo/assets/css/amazeui.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nickj</title>
+    <link rel="stylesheet" href="./myDemo/uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="./indexStyle.css">
 </head>
+
 <body>
-	<ul class="am-list admin-sidebar-list" id="collapase-nav-1">
-	  <li  class="am-panel">
-	    <a data-am-collapse="{parent: '#collapase-nav-1'}" href="#/"><i class="am-icon-home am-margin-left-sm"></i> 首页</a>
-	  </li>
 
-	  <li class="am-panel">
-	    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#web-nav'}">
-	        <i class="am-icon-desktop am-margin-left-sm"></i> 前端布局 <i class="am-icon-angle-right am-fr am-margin-right"></i>
-	    </a>
-	    <ul class="am-list am-collapse admin-sidebar-sub" id="web-nav">
-	        <li><a href="./myDemo/三栏式布局.html"><i class="am-icon-table am-margin-left-sm"></i> 三栏式布局 </a></li>
-	        <li><a href="./myDemo/定位居中.html"><i class="am-icon-table am-margin-left-sm"></i> 定位居中 </a></li>
-	        <li><a href="./myDemo/flex布局.html"><i class="am-icon-table am-margin-left-sm"></i> flex布局 </a></li>
-	        <li><a href="./myDemo/响应式网格设计.html"><span class="am-icon-table am-margin-left-sm"></span> 响应式网格设计 </a></li>
-	    </ul>
-	  </li>
+    <nav class="uk-navbar nav-main">
+        <ul class="uk-navbar-nav uk-link-muted uk-align-right" >
+            <li class="uk-contrast uk-position-top-left"><a href="#">Nickj</a></li>
+            <li class="uk-margin-small-right"><a href="">个人简历</a></li>
+            <li class="uk-margin-small-right"><a href="">联系方式</a></li>
+            <li class="uk-margin-small-right"><a href="http://nickgo.net">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="uk-block uk-block-large second-panel">
+      <div class="terminal"></div>
+    </div>
+    <nav class="uk-navbar uk-flex uk-flex-center sec-navbar" id="nav">
+        <ul class="uk-navbar-nav sec-navbar-i">
+            <li class="uk-parent" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
+                <a href="">前端案例 <i class="uk-icon-angle-down"></i></a>
+                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li class="uk-nav-header">前端案例</li>
+                        <li><a href="./myDemo/带有浮动遮罩的css按钮.html">带有浮动遮罩的css按钮</a></li>
+                        <li><a href="./myDemo/用CSS动画实现省略号动画.html">用CSS动画实现省略号动画</a></li>
+                        <li><a href="./myDemo/js判断鼠标向上滚动并浮动导航.html">js判断向上滚动并浮动导航</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="uk-parent" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
+                <a href="">完整页面 <i class="uk-icon-angle-down"></i></a>
+                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li class="uk-nav-header">页面制作</li>
+                        <li><a href="./myDemo/饿了吗首页.html">饿了吗首页</a></li>
+                        <li><a href="./myDemo/cNode社区首页.html">cNode社区首页</a></li>
+                        <li><a href="./myDemo/文章详情.html">cNode文章详情</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="uk-parent" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
+                <a href="">移动开发 <i class="uk-icon-angle-down"></i></a>
+                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li class="uk-nav-header">移动开发</li>
+                        <li><a href="">One</a></li>
+                        <li><a href="">Two</a></li>
+                        <li><a href="">Three</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="uk-parent" data-uk-dropdown aria-haspopup="true" aria-expanded="false">
+                <a href="">积累练习 <i class="uk-icon-angle-down"></i></a>
+                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li class="uk-nav-header">积累练习</li>
+                        <li><a href="./myDemo/css3新特性.html">css3新特性</a></li>
+                        <li><a href="./myDemo/响应式网格设计.html">响应式网格设计</a></li>
+                        <li><a href="./myDemo/flex布局.html">flex布局</a></li>
+                        <li><a href="./myDemo/三栏式布局.html">三栏式布局</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
-	  <li class="am-panel">
-	    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#page-nav'}">
-	        <i class="am-icon-tablet am-margin-left-sm"></i> 页面设计 <i class="am-icon-angle-right am-fr am-margin-right"></i>
-	    </a>
-	    <ul class="am-list am-collapse admin-sidebar-sub" id="page-nav">
-	        <li><a href="./myDemo/饿了吗首页.html"><span class="am-icon-table am-margin-left-sm"></span> 饿了吗首页</a></li>
-	        <li><a href="#/companyList/0"><span class="am-icon-table am-margin-left-sm"></span> QQ音乐首页实践</a></li>
-	        <li><a href="#/companyList/0"><span class="am-icon-table am-margin-left-sm"></span> 页面三</a></li>
-	    </ul>
-	  </li>
+    <div class="uk-container">
+        <ul class="uk-thumbnav uk-flex uk-flex-center uk-flex-wrap-middle thr-container">
 
-	  <li class="am-panel">
-	    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#js-nav'}">
-	        <i class="am-icon-fire am-margin-left-sm"></i> JavaScript应用 <i class="am-icon-angle-right am-fr am-margin-right"></i>
-	    </a>
-	    <ul class="am-list am-collapse admin-sidebar-sub" id="js-nav">
-	        <li><a href="./myDemo/js判断鼠标向上滚动并浮动导航.html"><span class="am-icon-table am-margin-left-sm"></span> js判断鼠标向上滚动并浮动导航 </a></li>
-	        <li><a href="#/roleList/0"><span class="am-icon-table am-margin-left-sm"></span> 项目二 </a></li>
-	        <li><a href="#/roleList/0"><span class="am-icon-table am-margin-left-sm"></span> 项目三 </a></li>
-	    </ul>
-	  </li>
-	  <li class="am-panel">
-	    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#webcom-nav'}">
-	        <i class="am-icon-bookmark am-margin-left-sm"></i> Web组件 <i class="am-icon-angle-right am-fr am-margin-right"></i>
-	    </a>
-	    <ul class="am-list am-collapse admin-sidebar-sub" id="webcom-nav">
-	        <li><a href="./myDemo/带有浮动遮罩的css按钮.html"><span class="am-icon-table am-margin-left-sm"></span> 带有浮动遮罩的css按钮 </a></li>
-	        <li><a href="./myDemo/用CSS动画实现省略号动画.html"><span class="am-icon-table am-margin-left-sm"></span> 用CSS动画实现省略号动画 </a></li>
-	        <li><a href="#/roleList/0"><span class="am-icon-table am-margin-left-sm"></span> 项目三 </a></li>
-	    </ul>
-	  </li>
-	  <li class="am-panel">
-	    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#css-nav'}">
-	        <i class="am-icon-bookmark am-margin-left-sm"></i> CSS特性 <i class="am-icon-angle-right am-fr am-margin-right"></i>
-	    </a>
-	    <ul class="am-list am-collapse admin-sidebar-sub" id="css-nav">
-	        <li><a href="./myDemo/css3新特性.html"><span class="am-icon-table am-margin-left-sm"></span> CSS3新特性 </a></li>
-	        <li><a href="./myDemo/用CSS动画实现省略号动画.html"><span class="am-icon-table am-margin-left-sm"></span> 项目二 </a></li>
-	        <li><a href="#/roleList/0"><span class="am-icon-table am-margin-left-sm"></span> 项目三 </a></li>
-	    </ul>
-	  </li>
-	</ul>
-<script type="text/javascript" src="./myDemo/assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="./myDemo/assets/js/amazeui.min.js"></script>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img class="" src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_6.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>饿了吗首页</h3>
+                            <p>饿了吗官方首页的实现</p>
+                        </div>
+                        <a href="./myDemo/饿了吗首页.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/饿了吗首页.html">饿了吗首页</a>
+                    </div>
+                </div>
+
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_8.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>cNode社区首页</h3>
+                            <p>cNode社区，Node.js爱好者论坛首页的实现，为后期Vue.js重构做基础</p>
+                        </div>
+                        <a href="./myDemo/cNode社区首页.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/cNode社区首页.html">cNode社区首页</a>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_9.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>cNode文章详情</h3>
+                            <p>文章详情的实现</p>
+                        </div>
+                        <a href="./myDemo/文章详情.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/文章详情.html">cNode文章详情</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_11.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>CSS3新特性</h3>
+                            <p>对CSS3的新特性的学习，主要为一些基本动画效果</p>
+                        </div>
+                        <a href="./myDemo/css3新特性.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/css3新特性.html">css3新特性</a>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_12.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>带有浮动遮罩的css按钮</h3>
+                            <p>一个带有Hover遮罩效果的纯css实现的Button</p>
+                        </div>
+                        <a href="./myDemo/带有浮动遮罩的css按钮.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/带有浮动遮罩的css按钮.html">带有浮动遮罩的css按钮</a>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_13.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>用CSS动画实现省略号动画</h3>
+                            <p></p>
+                        </div>
+                        <a href="./myDemo/用CSS动画实现省略号动画.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/用CSS动画实现省略号动画.html">用CSS动画实现省略号动画</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_14.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>js判断鼠标向上滚动并浮动导航</h3>
+                            <p>实现网页向上滚动时显示浮动导航的效果</p>
+                        </div>
+                        <a href="./myDemo/js判断鼠标向上滚动并浮动导航.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/js判断鼠标向上滚动并浮动导航.html">js判断鼠标向上滚动并浮动导航</a>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_15.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>三栏式布局</h3>
+                            <p>网页基本布局样式之三栏式布局</p>
+                        </div>
+                        <a href="./myDemo/三栏式布局.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/三栏式布局.html">三栏式布局</a>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_16.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>定位居中</h3>
+                            <p>网页布局常常要用的居中实现，收集备忘</p>
+                        </div>
+                        <a href="./myDemo/定位居中.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/定位居中.html">定位居中</a>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_18.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>flex布局</h3>
+                            <p>新时代最流行的Flex布局</p>
+                        </div>
+                        <a href="./myDemo/flex布局.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/flex布局.html">flex布局</a>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2">
+                <div class="uk-thumbnail uk-thumbnail-medium">
+                    <figure class="wht-border uk-overlay uk-overlay-hover">
+                        <img src="http://of30nsqpd.bkt.clouddn.com/practise/1228Snip20161228_19.png" alt="">
+                        <div class="uk-overlay-panel uk-overlay-fade uk-overlay-background">
+                            <h3>响应式网格设计</h3>
+                            <p>前端框架的响应式布局实现</p>
+                        </div>
+                        <a href="./myDemo/响应式网格设计.html" class="uk-position-cover"></a>
+                    </figure>
+                    <div class="uk-thumbnail-caption">
+                        <a href="./myDemo/响应式网格设计.html">响应式网格设计</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <div class="uk-container uk-container-center uk-text-center">
+            <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                <li><a href="">我的简历</a></li>
+                <li><a href="">联系方式</a></li>
+                <li><a href="http://nickgo.net">BLOG</a></li>
+            </ul>
+            <div class="uk-panel">
+                <p>
+                    Made by Nickj with love and caffeine. <br> Licensed under MIT license. <br>
+                    <a href=""><img src="" alt="">Nickj</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" style="display:block">
+        <a href="#" data-uk-smooth-scroll><img src="https://d13yacurqjgara.cloudfront.net/assets/icon-backtotop-1b04df73090f6b0f3192a3b71874ca3b3cc19dff16adc6cf365cd0c75897f6c0.png" alt=""></a>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./myDemo/uikit/js/uikit.min.js" charset="utf-8"></script>
+    <script src="./assets/js/typewriting.min.js" charset="utf-8"></script>
+    <script src="./indexScript.js" charset="utf-8"></script>
 </body>
+
 </html>

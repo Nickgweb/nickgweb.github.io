@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#"><img class="nav-logo" src="https://o4j806krb.qnssl.com/public/images/cnodejs_light.svg" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">新手入门</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">关于</a></li>
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">登录</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div class="content row">
+        <!-- 左侧主要栏目start -->
+        <div class="content-left content-article col-xs-12 col-sm-12 col-md-8">
+            <div class="topic-item">
+                <div class="topic_header">
+                    <h3>重新整理CNodejs的api接口，支持在线调试。</h3>
+                    <div class="topic_info">
+                        <span>发布于 3 天前</span>
+                        <span>作者 <a href="">maclinuxp</a></span>
+                        <span>222 次浏览</span>
+                        <span>来自 分享</span>
+                    </div>
+                </div>
+                <div class="topic_content">
+                    <p>
+                        文档地址：
+                        <a href="http://apizza.cc/console/project/f650fa55862c4d378c19e27e0c5f42d9/browse?api=7e189974d83642869f54a6bc4f8e5c83">CNodejs Api</a>
+                        <img src="https://dn-cnode.qbox.me/FgDLRcCkKQI8AUMjmNL7ak9UWu5u" alt="" >
+                        <p>
+                            备注：<br>
+                            1.如果要测试文档里面的 Api ，需要安装 Apizza 的 chrome 插件。不然只能浏览文档，（插件主要功能是支持跨域发送请求）</p>
+                        <p>2.只能在 chrome 内核浏览器上面安装插件</p>
+                        <p>3.右上角选择一下 开发环境，选择线上。因为不同的环境调用的不同的 server 地址</p>
+                        <p>4.目前GET请求是正确的，POST请求我估计CNodejs 做了限制，始终返回 token 错误。</p>
+                        <p>5.如果有什么问题，欢迎留言，我在更正^_^</p>
+                    </p>
+                </div>
+            </div>
+            <div class="section-panel reply-panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">8 回复</div>
+                    <div class="reply-body">
+                        <div class="reply-item">
+                            <div class="author_content">
+                                <a class="user_avatar pull-left" href=""><img src="https://avatars.githubusercontent.com/u/1147375?v=3&s=120" alt=""></a>
+                                <div class="user-info">
+                                    <a class="author_name" href="">alsotang</a>
+                                    <a class="reply_time" href="">1楼•3 天前</a>
+                                </div>
+                            </div>
+                            <div class="reply_content">
+                                <p>cnode api对于post请求没有做任何特殊限制。<br> 随便一个 curl 脚本就能通</p>
+                            </div>
+                        </div>
+                        <div class="reply-item">
+                            <div class="author_content">
+                                <a class="user_avatar pull-left" href=""><img src="https://avatars.githubusercontent.com/u/6064962?v=3&s=120" alt=""></a>
+                                <div class="user-info">
+                                    <a class="author_name" href="">TakWolf</a>
+                                    <a class="reply_time" href="">2楼•3 天前</a>
+                                </div>
+                            </div>
+                            <div class="reply_content">
+                                <p>ctoken错误说明你没有带accesstoken 来自酷炫的 CNodeMD</p>
+                            </div>
+                        </div>
+                        <div class="reply-item">
+                            <div class="author_content">
+                                <a class="user_avatar pull-left" href=""><img src="https://avatars.githubusercontent.com/u/2082648?v=3&s=120" alt=""></a>
+                                <div class="user-info">
+                                    <a class="author_name" href="">maclinuxp</a>
+                                    <a class="reply_time" href="">4楼•3 天前</a>
+                                </div>
+                            </div>
+                            <div class="reply_content">
+                                <p>而且我调用其他GET接口，比如个人信息接口，我传的这个token，就能获取到信息。所以给我的感觉是token是对的，只是做了限制^_^</p>
+                            </div>
+                        </div>
+                        <div class="reply-item">
+                            <div class="author_content">
+                                <a class="user_avatar pull-left" href=""><img src="https://avatars.githubusercontent.com/u/7995232?v=3&s=120" alt=""></a>
+                                <div class="user-info">
+                                    <a class="author_name" href="">JZLeung</a>
+                                    <a class="reply_time" href="">5楼•2 天前 天前</a>
+                                </div>
+                            </div>
+                            <div class="reply_content">
+                                <p>我用postman也发送不了post请求，同样是token错误。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 左侧主要栏目end -->
+
+        <!-- 右侧边栏部分 -->
+        <div class="content-right pull-right hidden-xs hidden-sm col-md-4">
+            <div class="section-panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">作者</div>
+                    <div class="panel-body">
+                        <a class="author_avatar"><img src="https://avatars.githubusercontent.com/u/2082648?v=3&s=120" alt=""></a>
+                        <span class="au_name"><a href="">maclinuxp</a></span>
+                        <div class="author_point"><span class="big">积分: 65 </span></div>
+                        <div class="author_sign"><span class="signature">“ 这家伙很懒，什么个性签名都没有留下。 ”</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">作者的其他话题</div>
+                    <div class="panel-body">
+                        <ul class="panel-list">
+                            <li>
+                                <a href="">vue 如何和 nodejs 前后端结合？</a>
+                            </li>
+                            <li>
+                                <a href="">Api测试创建主题^_^(URLencode 方式提交）</a>
+                            </li>
+                            <li>
+                                <a href="">Api开发者福利:Api在线管理,模拟请求测试,文档生成利器之Apizza</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">无人回复的话题</div>
+                    <div class="panel-body">
+                        <ul class="panel-list">
+                            <li>
+                                <a href="">mongodb $pull 为什么不能删除</a>
+                            </li>
+                            <li>
+                                <a href="">升级node到v6.9.1之后, 安装模块时 node-gyp出现编译不过去了，请问各位这问题怎么解决？多谢！</a>
+                            </li>
+                            <li>
+                                <a href="">几个koa模块的使用（koa-swig、co-view）</a>
+                            </li>
+                            <li>
+                                <a href="">lesson4: 《使用 Modernizr 对浏览器进行 HTML5 和 CSS3 功能检测》</a>
+                            </li>
+                            <li>
+                                <a href="">N3组件新增ant风格主题</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 右侧边栏部分 -->
+
+
+    </div>
+    <!-- content end -->
+
+    <footer>
+        <div class="links">
+            <a href="">RSS</a> | <a href="">源码地址</a>
+        </div>
+        <div class="com-info">
+            <p>CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js 的技术研究。</p>
+            <p>
+                服务器赞助商为
+                <a href=""><img src="https://dn-cnode.qbox.me/FuIpEaM9bvsZKnQ3QfPtBHWQmLM9" alt=""></a>，存储赞助商为
+                <a href=""><img src="https://dn-cnode.qbox.me/Fg0jtDIcTqVC049oVu5-sn6Om4NX" alt=""></a>，由
+                <a href=""><img src="https://dn-cnode.qbox.me/FpMZk31PDyxkC8yStmMQL4XroaGD" alt=""></a>提供应用性能服务。
+            </p>
+            <p>新手搭建 Node.js 服务器，推荐使用无需备案的 <a href="">DigitalOcean(https://www.digitalocean.com/)</a></p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
